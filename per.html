@@ -21,6 +21,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .nine{
@@ -144,10 +145,45 @@ body{
     transform: rotate(calc((360deg / 18 * var(--i)) + 10deg));
 }
 
+@media (max-width:625px) {
+    .container{
+        transform: scale(0.8);
+    }    
+}
+
+@media (max-width:500px) {
+    .container{
+        transform: scale(0.7);
+    }    
+}
+
+@media (max-width:450px) {
+    .container{
+        transform: scale(0.6);
+    }    
+}
+
+@media (max-width:400px) {
+    .container{
+        transform: scale(0.5);
+    }    
+}
+
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
     </style>
 </head>
 <body>
-    
+    <div class="container">
    <div class="nine">
     <div class="pra" style="--i:0"></div>
     <div class="pra" style="--i:1"></div>
@@ -194,6 +230,7 @@ body{
    </div>
    <div class="first">
 
+   </div>
    </div>
 </body>
 </html>
