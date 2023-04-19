@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="per.css"> -->
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nine{
+    border: 0.1px solid black;
+    position: absolute;
+    height: 603px;
+    width: 603px;
+    background-color: white;
+    border-radius: 50%;
+    background: conic-gradient(#4f000b 0deg,#4f000b 120deg,white 120deg,white 180deg,#4f000b 180deg,#4f000b 360deg);
+}
+.eight{
+    border: 0.1px solid black;
+    position: absolute;
+    height: 536px;
+    width: 536px;
+    background-color: blue;
+    z-index: 1;
+    border-radius: 50%;
+    background: conic-gradient( skyblue 0deg,skyblue 120deg,white 120deg,white 180deg,skyblue 180deg,skyblue 360deg);
+}
+.seven{
+    border: 0.1px solid black;
+    position: absolute;
+    height: 469px;
+    width: 469px;
+    z-index: 2;
+    background-color: chartreuse;
+    border-radius: 50%;
+    background: conic-gradient( blue 0deg,blue 80deg,white 80deg,white 100deg,yellow 100deg,yellow 120deg,#c1121f 120deg,#c1121f 140deg,red 140deg,red 260deg,#4361ee 260deg,#4361ee 280deg,red 280deg,red 360deg);
+}
+
+.six{
+    border: 0.1px solid black;
+    position: absolute;
+    height: 402px;
+    width: 402px;
+    z-index: 3;
+    background-color: cornsilk;
+    border-radius: 50%;
+    background: conic-gradient( blue 0deg,blue 100deg,white 100deg,white 120deg,yellow 120deg,yellow 140deg,#c1121f 140deg,#c1121f 160deg,#ffe45e 160deg,#ffe45e 180deg,#660708 180deg,#660708 200deg,#4361ee 200deg,#4361ee 300deg,blue 300deg,blue 360deg);
+}
+.five{
+    border: 0.1px solid black;
+    position: absolute;
+    height: 335px;
+    width: 335px;
+    z-index: 4;
+    background-color: white;
+    border-radius: 50%;
+    background: conic-gradient(#03045e 0deg,#03045e 120deg,yellow 120deg,yellow 140deg,#c1121f 140deg ,#c1121f 160deg,#ffe45e 160deg ,#ffe45e 180deg,#2a9134 180deg,#2a9134 200deg,#660708 200deg,#660708 240deg,#4361ee 240deg,#4361ee 300deg,#03045e 300deg,#03045e 360deg);
+
+
+}
+.four{
+    border: 0.1px solid black;
+    position: absolute;
+    height: 268px;
+    width: 268px;
+    z-index: 5;
+    background-color: white;
+    border-radius: 50%;
+    background: conic-gradient(#03045e 0deg,#03045e 120deg,yellow 120deg,yellow 140deg,#c1121f 140deg ,#c1121f 160deg,#ffe45e 160deg ,#ffe45e 180deg,#2a9134 180deg,#2a9134 220deg,#660708 220deg,#660708 260deg,#4361ee 260deg,#4361ee 300deg,#03045e 300deg,#03045e 360deg);
+
+}
+.three{
+    border: 0.1px solid black;
+    position: absolute;
+    height: 201px;
+    width: 201px;
+    z-index: 6;
+    background-color: white;
+    border-radius: 50%;
+    background: conic-gradient(white 0deg,white 120deg,yellow 120deg,yellow 140deg,#c1121f 140deg,#c1121f 160deg,#ffe45e 160deg ,#ffe45e 180deg,#2a9134 180deg, #2a9134 240deg,#660708 240deg,#660708 260deg,#4361ee 260deg,#4361ee 280deg,white 280deg,white 360deg);
+
+}
+.two{
+    border: 0.1px solid black;
+    position: absolute;
+    height: 134px;
+    width: 134px;
+    z-index: 7;
+    background-color: white;
+    border-radius: 50%;
+    background: conic-gradient(white 0deg,white 140deg,#c1121f 140deg,#c1121f 160deg,#ffe45e 160deg ,#ffe45e 180deg,#2a9134 180deg, #2a9134 260deg,#660708 260deg,#660708 280deg,white 280deg,white 360deg);
+
+
+}
+.first{
+    border: 0.1px solid black;
+    position: absolute;
+    height: 67px;
+    width: 67px;
+    z-index: 8;
+    background-color: white;
+    border-radius: 50%;
+    background: conic-gradient(white 0deg,white 140deg,#c1121f 140deg,#c1121f 160deg,#ffe45e 160deg ,#ffe45e 180deg,white 180deg,white 360deg);
+
+}
+/* hr{
+    border: 0.1px solid black;
+    padding: 0;
+    margin: 0;
+    
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    z-index: 10;
+    transform: translate(0,-50%);
+    transform: rotate(calc((360deg / 18 * var(--i)) + 10deg));
+
+} */
+.pra{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translate(0,-50%);
+    z-index: 11;
+    border: 0.1px solid black;
+    border-bottom: none;
+    transform: rotate(calc((360deg / 18 * var(--i)) + 10deg));
+}
+
+    </style>
+</head>
+<body>
+    
+   <div class="nine">
+    <div class="pra" style="--i:0"></div>
+    <div class="pra" style="--i:1"></div>
+    <div class="pra" style="--i:2"></div>
+    <div class="pra" style="--i:3"></div>
+    <div class="pra" style="--i:4"></div>
+    <div class="pra" style="--i:5"></div>
+    <div class="pra" style="--i:6"></div>
+    <div class="pra" style="--i:7"></div>
+    <div class="pra" style="--i:8"></div>
+    <!-- <hr style="--i:0" noshade="">
+    <hr style="--i:1"noshade="">
+    <hr style="--i:2"noshade="">
+    <hr style="--i:3"noshade="">
+    <hr style="--i:4"noshade="">
+    <hr style="--i:5"noshade="">
+    <hr style="--i:6"noshade="">
+    <hr style="--i:7"noshade="">
+    <hr style="--i:8"noshade=""> -->
+
+   </div>
+   <div class="eight">
+
+   </div>
+   <div class="seven">
+
+   </div>
+
+   <div class="six">
+
+   </div>
+   <div class="five">
+
+   </div>
+
+   <div class="four">
+
+   </div>
+   <div class="three">
+
+   </div>
+   <div class="two">
+
+   </div>
+   <div class="first">
+
+   </div>
+</body>
+</html>
